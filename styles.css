@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.205)) ;
+}
+
+h1{
+    position: relative;
+    left: 8vh;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    border:2px solid black;
+    height: 70px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.829);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}

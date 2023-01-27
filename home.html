@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data e Hora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="time();">
+    <script language=javascript type="text/javascript">
+        const now = new Date;
+        const dayName =  ["domingo","segunda","terça","quarta","quinta","sexta","sábado"];
+        const monthName = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+
+        document.write ("<h1> Hoje é " +  dayName[now.getDay() ] + "," + now.getDate() + " de " + monthName [now.getMonth()] + " de " + now.getFullYear() + " </h1> ")
+        
+        function time(){
+            const today = new Date;
+            const h = today.getHours();
+            const m = today.getMinutes();
+            const s = today.getSeconds();
+
+            document.getElementById('txt').innerHTML= h + ":" + m + ":" + s; setTimeout('time() ',05);
+
+        }
+        
+        
+        </script>
+
+    <h1 id="txt">
+        
+    </h1>
+
+</body>
+</html>
